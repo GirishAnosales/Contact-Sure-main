@@ -1,0 +1,47 @@
+<div class="container-fluid home">
+    <div class="row r1 wallpapers">
+        <div class="col-sm-12 r1c1">
+        </div>
+    </div>
+
+    <div class="row r2">
+        <div class="col-sm-12 r2c1">
+            <div class="row r2c1r1">
+                <h1 class="h1">Exploring Our World, Together</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row r3">
+        <div class="col-sm-12 r3c1">
+            <h4 class="h4">At Contact Sure, we specialize in providing a wide range of data services to help
+                businesses like yours succeed. Our team of experts is dedicated to ensuring that your data is accurate,
+                reliable, and up-to-date, so you can make informed decisions and achieve your business goals.</h4>
+            <h6 class="h6">What We Provide</h6>
+        </div>
+
+        <div class="col-lg-4 r3c2" *ngFor="let item of what_we_provide">
+            <mat-card class="mat-card">
+                <mat-card-header class="mat-card-header">
+                    <mat-card-title class="mat-card-title">{{ item.title }}</mat-card-title>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <mat-card-content class="mat-card-content">
+                    <p>{{ item.content }}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div class="col-sm-12 r3c2">
+            <h6 class="h6">At Contact Sure, we are committed to providing our clients with the highest quality data
+                services and customer support. Contact us today to learn more about how we can help you achieve your
+                business goals.</h6>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 p-0">
+            <app-stats-counter></app-stats-counter>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,154 @@
+<div class="container-fluid home">
+
+    <div class="row alert-r">
+        <div class="col-sm-12 alert-c">
+            <p class="p"><b>Important:</b> This site is under development. Some components might not work.</p>
+        </div>
+    </div>
+
+    <div class="row r1">
+
+        <div class="col-sm-6 r1c1">
+            <div class="logo" *ngIf="(isMediumLargeXLarge | async)">
+                <h6 class="h6">Contact Sure</h6>
+            </div>
+        </div>
+
+        <div class="col-sm-6 r1c2">
+            <ng-container class="ng-container" *ngIf="(isMediumLargeXLarge | async)">
+                <button routerLink="home" (click)="scrollToTop()" class="button hvr-underline-from-left"
+                    style="color: #fff; font-family: Montserrat;" mat-button>Home</button>
+                <button [matMenuTriggerFor]="menu" class="button" style="color: #fff; font-family: Montserrat; "
+                    class="button hvr-underline-from-left" mat-button>Services</button>
+                <mat-menu class="mat-menu" #ServicesButton #menu="matMenu">
+                    <div class="mat-menu-content">
+                        <button [matMenuTriggerFor]="dataServices" (click)="scrollToTop()" class="mat-menu-item"
+                            mat-menu-item>
+                            <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">
+                                Data Services
+                            </h6>
+                        </button>
+                        <mat-divider style="border-top-color: #f2f2f2;"></mat-divider>
+                        <button [matMenuTriggerFor]="leadGeneration" (click)="scrollToTop()" class="mat-menu-item"
+                            mat-menu-item>
+                            <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">
+                                Lead Generation</h6>
+                        </button>
+                    </div>
+                </mat-menu>
+
+                <mat-menu #dataServices="matMenu">
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Address Append</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Email Append</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Industry Append
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Revenue Append</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Title Append</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Technology Append
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Address
+                            Verification</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Email Verification
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Phone Verification
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Website
+                            Verification</h6>
+                    </button>
+                </mat-menu>
+
+                <mat-menu #leadGeneration="matMenu">
+                    <button mat-menu-item (click)="scrollToTop()"
+                        routerLink="services/lead-generation/account-profiling">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Account Profiling
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()"
+                        routerLink="services/lead-generation/appointment-settings">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Appointment Setting
+                            Process</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()"
+                        routerLink="services/lead-generation/content-syndication">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Content
+                            Syndication</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()" routerLink="services/lead-generation/custom-built">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Custom Built</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()"
+                        routerLink="services/lead-generation/event-promotions">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Event Promotions
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()" routerLink="services/lead-generation/lead-nurturing">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Lead Nurturing</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()"
+                        routerLink="services/lead-generation/market-intelligence">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Market Intelligence
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()"
+                        routerLink="services/lead-generation/technology-users">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Technology Users
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #10526B40;"></mat-divider>
+                    <button mat-menu-item (click)="scrollToTop()"
+                        routerLink="services/lead-generation/tele-prospecting">
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Tele-Prospecting
+                        </h6>
+                    </button>
+
+
+                </mat-menu>
+
+                <!-- <button routerLink="careers" (click)="scrollToTop()" class="button"
+                    style="color: #fff; font-family: Montserrat; " class="button hvr-underline-from-left"
+                    mat-button>Careers</button> -->
+                <button routerLink="about" (click)="scrollToTop()" class="button"
+                    style="color: #fff; font-family: Montserrat; " class="button hvr-underline-from-left"
+                    mat-button>About</button>
+                <button routerLink="contact" (click)="scrollToTop()" class="button"
+                    style="color: #fff; font-family: Montserrat; " class="button hvr-underline-from-left"
+                    mat-button>Contact</button>
+            </ng-container>
+        </div>
+    </div>
+</div>

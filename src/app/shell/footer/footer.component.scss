@@ -1,0 +1,104 @@
+@import '../../theme/theme.scss';
+
+@media screen and (min-width:960px) {
+    .footer {
+        background-color: $color-black;
+        color: $color-white;
+        position: relative;
+        z-index: 1;
+
+        .r1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+
+            .c1,
+            .c2,
+            .c3,
+            .c4 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 3rem;
+                padding-top: 1em;
+                padding-bottom: 4em;
+
+                .h6 {
+                    color: $color-white;
+                }
+
+                .a {
+                    margin-left: 1rem;
+                    color: #212121;
+                    text-decoration: none;
+
+                    .h6 {
+                        font-size: small;
+                        font-weight: 500;
+                        transition: .2s;
+                        letter-spacing: .5px;
+                        color: $color-yellow;
+                    }
+
+                    .h6:hover {
+                        font-weight: bold;
+                        transition: .3s;
+                        color: $color-yellow;
+                    }
+                }
+
+                .social-media-icons {
+                    margin-top: 1rem;
+
+                    .social-media-links {
+                        padding: 1rem;
+
+                        .bi {
+                            color: $color-yellow;
+                            transition: .3s;
+                            font-size: 20px;
+                        }
+
+                        .bi:hover {
+                            color: $color-yellow;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+
+            .c4 {
+                border-right: 0px;
+            }
+        }
+
+        .r2 {
+            padding: 1rem 0;
+            border-top: 1px solid $color-gray;
+            background-color: $color-blue;
+
+            .c1 {
+                text-align: center;
+
+                .h6 {
+                    margin: 0;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .footer {
+        .r1 {
+
+            .c1,
+            .c2,
+            .c3,
+            .c4 {
+                padding-left: 7rem;
+            }
+        }
+    }
+}

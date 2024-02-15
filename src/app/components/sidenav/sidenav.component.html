@@ -1,0 +1,129 @@
+<div class="container-fluid sidenav" *ngIf="isSmall | async">
+    <div class="row r">
+        <div class="col-sm-12 c">
+            <mat-sidenav-container class="sidenav-container">
+                <mat-sidenav #drawer class="mat-sidenav" fixedInViewport
+                    [attr.role]="(isSmall | async) ? 'dialog' : 'navigation'" mode="over">
+                    <mat-nav-list class="mat-nav-list">
+                        <div class="close-button">
+                            <button class="button" type="button" aria-label="Toggle sidenav" mat-icon-button
+                                (click)="drawer.close()">
+                                <mat-icon class="icon" aria-label="Side nav toggle icon">close</mat-icon>
+                            </button>
+                        </div>
+                        <div class="label">
+                            <h6 class="h6">Pages</h6>
+                        </div>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="home">
+                            <h6 class="h6">Home</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="careers">
+                            <h6 class="h6">Careers</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="about">
+                            <h6 class="h6">About</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="contact">
+                            <h6 class="h6">Contact</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="privacy-policy">
+                            <h6 class="h6">Privacy-Policy</h6>
+                        </a>
+
+                        <mat-divider class="mat-divider"></mat-divider>
+
+                        <div class="label">
+                            <h6 class="h6">Data Services</h6>
+                        </div>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Website Verification</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Email Verification</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Phone Verification</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Address Verification</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Email Append</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Technology Append</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Title Append</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Industry Append</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Revenue Append</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Address Append</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+
+                        <div class="label">
+                            <h6 class="h6">Lead Generation Services</h6>
+                        </div>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Tele-Prospecting</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Appointment Setting Process</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Lead Nurturing</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Account Profiling</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Market Intelligence</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Whitepaper Syndication</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Event Promotions</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                    </mat-nav-list>
+                </mat-sidenav>
+                <mat-sidenav-content class="mat-sidenav-content">
+                    <mat-toolbar class="mat-toolbar">
+                        <h1 class="h1">Contact Sure</h1>
+                        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+                            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+                        </button>
+                    </mat-toolbar>
+                </mat-sidenav-content>
+            </mat-sidenav-container>
+        </div>
+    </div>
+</div>

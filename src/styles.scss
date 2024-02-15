@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url('./assets/Fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat !important;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 !important;
+        padding: 1rem;
+    }
+}

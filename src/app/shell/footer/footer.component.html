@@ -1,0 +1,56 @@
+<div class="container-fluid footer" *ngIf="!(isSmallXSmall | async)">
+    <div class="row r1">
+        <h6 class="h6">Quick Links</h6>
+        <div class="col-sm-3 c1" data-aos="fade-up" data-aos-delay="300">
+            <div class="links">
+                <a routerLink="" (click)="onClick()" class="a">
+                    <h6 class="h6">Data Services</h6>
+                </a>
+                <a routerLink="" (click)="onClick()" class="a">
+                    <h6 class="h6">Lead Generation</h6>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 c2" data-aos="fade-up" data-aos-delay="600">
+            <!-- <h6 class="h6">Company</h6> -->
+            <div class="links">
+                <a routerLink="about" (click)="onClick()" class="a">
+                    <h6 class="h6">About Us</h6>
+                </a>
+                <a routerLink="careers" (click)="onClick()" class="a">
+                    <h6 class="h6">Careers</h6>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 c3" data-aos="fade-up" data-aos-delay="900">
+            <!-- <h6 class="h6">Support</h6> -->
+            <div class="links">
+                <a routerLink="contact" (click)="onClick()" class="a">
+                    <h6 class="h6">Contact</h6>
+                </a>
+                <a routerLink="privacy-policy" (click)="onClick()" class="a">
+                    <h6 class="h6">Privacy Policy</h6>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 c4" data-aos="fade-up" data-aos-delay="1200">
+            <h6 class="h6">Follow us</h6>
+            <div class="social-media-icons">
+                <a class="social-media-links" target="_blank" href="https://www.linkedin.com/company/contact-sure/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="social-media-links" target="_blank" href="https://www.facebook.com/Contactsure/">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a class="social-media-links" target="_blank" href="https://twitter.com/contactsure">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row r2">
+        <div class="col-sm-12 c1">
+            <h6 class="h6">Copyright Contact-Sure © 2016 - 2023</h6>
+        </div>
+    </div>
+</div>

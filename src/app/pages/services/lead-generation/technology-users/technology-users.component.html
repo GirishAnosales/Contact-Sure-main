@@ -1,0 +1,19 @@
+<div class="container-fluid home">
+    <div class="row r1">
+        <div class="col-sm-12 r1c1">
+        </div>
+        <div class="col-sm-12 r1c2">
+            <h1 class="h1">Technology Users</h1>
+        </div>
+    </div>
+
+    <div class="row r2">
+        <div class="col-sm-6 r2c1" *ngFor="let items of r2">
+            <mat-card class="mat-card">
+                <mat-card-content class="mat-card-content">
+                    <p class="p">{{items.content}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+@import '../../theme/theme.scss';
+
+@media screen and (min-width: 0px) {
+    .testimonials {
+        padding: 0%;
+
+        .r1 {
+            background-color: $color-light-gray;
+            border-top: 1px solid $color-black;
+            border-bottom: 1px solid $color-black;
+
+            .testimonials-title {
+                width: 100%;
+
+                .h3 {
+                    text-align: center;
+                    padding: 1rem;
+                    padding-top: 3rem;
+                    margin: 0%;
+                }
+            }
+        }
+
+        .c1,
+        .c2,
+        .c3 {
+            .mat-card {
+                .mat-card-content {
+                    font-style: italic;
+                    font-size: small;
+                    line-height: 2rem;
+
+                    .h6 {
+                        text-align: start;
+                        color: $color-black;
+                    }
+                }
+
+                .mat-card-footer {
+                    border-top: 1px solid $color-black;
+
+                    .mat-card-subtitle {
+                        text-align: center;
+                        font-family: RedHatDisplay;
+                    }
+                }
+            }
+        }
+    }
+}

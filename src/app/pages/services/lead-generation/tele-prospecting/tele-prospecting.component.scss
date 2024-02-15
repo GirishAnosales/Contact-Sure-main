@@ -1,0 +1,83 @@
+@import "../../../../theme/theme.scss";
+
+@media screen and (min-width: 0px) {
+    .home {
+        .r1 {
+            height: 100vh;
+
+            .r1c1 {
+                height: inherit;
+                background-image: url("../../../../../assets/images/wallpapers/services/Tele-Prospecting.png");
+                background-position: center center;
+                background-size: cover;
+            }
+
+            .r1c2 {
+                height: 90vh;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+
+                .h1 {
+                    background-color: #ffffff20;
+                    color: $color-white;
+                    font-weight: bold;
+                    border-radius: 1rem;
+                    backdrop-filter: blur(40px);
+                    border: 2px solid $color-gray;
+                    box-shadow: 0px 6px 40px 1px #00000040;
+                }
+            }
+        }
+
+        .r2 {
+            background-color: $color-white;
+            color: $color-white;
+            height: auto;
+
+            .r2c1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: space-evenly;
+                align-items: center;
+                padding: 2rem;
+
+                .mat-card {
+                    display: flex;
+                    background-color: $color-blue;
+                    border-radius: 1rem;
+                    overflow: hidden;
+                    width: 100%;
+
+                    .mat-card-content {
+                        height: 100%;
+                        min-height: 200px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .icons {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home {
+        .r1 {
+            .r1c2 {
+                .h1 {
+                    font-weight: bold;
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+}

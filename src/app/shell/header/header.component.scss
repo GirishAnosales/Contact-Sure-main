@@ -1,0 +1,81 @@
+@import '../../theme/theme.scss';
+
+@media screen and (min-width:0px) {
+    .home {
+        background-color: $color-blue;
+        box-shadow: 0px 0px 16px 0px #0000001a;
+        color: $color-white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+
+        .alert-r {
+            background-color: $color-white;
+
+            .alert-c {
+                .p {
+                    padding: 0%;
+                    color: $color-blue;
+                    text-align: center;
+                    font-size: small;
+                }
+            }
+        }
+
+        .button {
+            border: none;
+            margin: 0 1rem;
+        }
+
+        .hvr-underline-from-left:before {
+            background-color: $color-yellow;
+            height: 3px;
+        }
+
+        .r1 {
+
+            .r1c1 {
+                .logo-img {
+                    width: 25%;
+                }
+            }
+
+            .r1c2 {
+                text-align: end;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px) {
+    .home {
+        .r1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .r1c1 {
+                .h1 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:960px) {
+    .home {
+        .r1 {
+            padding: 0.5rem 0;
+
+            .r1c2 {
+
+                .ng-container {
+                    .button {
+                        background-color: #FFE8D6;
+                    }
+                }
+            }
+        }
+    }
+}

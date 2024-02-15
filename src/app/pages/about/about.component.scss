@@ -1,0 +1,121 @@
+@import '../../theme/theme.scss';
+@import '../../theme/keyframes.scss';
+
+@media screen and (min-width: 0px) {
+    .home {
+        height: 100%;
+        width: 100%;
+        background-color: $color-white;
+
+        .button {
+            background-color: $color-black;
+            color: $color-white;
+            font-family: Montserrat;
+            transition: 0.2s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: $color-white;
+            color: $color-black;
+        }
+
+        .r1 {
+            height: 720px;
+
+            .r1c1 {
+                padding: 0%;
+                background-image: url('../../../assets/images/wallpapers/adobe/5.png');
+                background-position: center;
+                filter: brightness(50%);
+            }
+        }
+
+        .r2 {
+            display: flex;
+            justify-content: center;
+
+            .r2c1 {
+                backdrop-filter: blur(4px);
+                box-shadow: 0px 0px 4px 0px #00000020;
+                position: absolute;
+                top: 14rem;
+                text-align: center;
+                padding: 1rem;
+
+                .h1 {
+                    font-weight: bold;
+                    color: $color-yellow;
+                }
+
+                .p {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .r3 {
+
+            .r3c2 {
+                .mat-card {
+                    margin: 1rem;
+                    overflow: hidden;
+                    transition: 0.3s;
+
+                    .mat-card-header {
+                        background-color: $color-yellow;
+                        display: flex;
+                        justify-content: center;
+                        padding: 0.5rem;
+
+                        .mat-card-title {
+                            font-size: small;
+                            font-family: Montserrat;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .mat-card-content {
+                        min-height: 200px;
+                        height: 100%;
+                        padding: 0.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                .mat-card:hover {
+                    box-shadow: 0px 8px 32px 1px #00000020;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width: 960px) {
+    .home {
+        .r2 {
+            flex-direction: column;
+
+            .r2c1 {
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                text-align: center;
+                backdrop-filter: blur(0px);
+                box-shadow: none;
+                top: 20rem;
+
+                .h1 {
+                    font-size: 80px;
+                }
+            }
+        }
+
+        .r3 {
+            padding: 2rem;
+        }
+    }
+}
